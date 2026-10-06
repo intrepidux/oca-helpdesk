@@ -11,6 +11,7 @@ class AccountAnalyticLine(models.Model):
         comodel_name="helpdesk.ticket",
         string="Ticket",
         domain=[("project_id", "!=", False)],
+        groups="helpdesk_mgmt.group_helpdesk_user",
     )
     ticket_partner_id = fields.Many2one(
         comodel_name="res.partner",
@@ -18,6 +19,7 @@ class AccountAnalyticLine(models.Model):
         string="Ticket partner",
         store=True,
         compute_sudo=True,
+        groups="helpdesk_mgmt.group_helpdesk_user",
     )
 
     @api.onchange("ticket_id")

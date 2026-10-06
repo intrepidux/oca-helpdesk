@@ -28,7 +28,6 @@
   * Pedro M. Baeza
   * Víctor Martínez
   * Carolina Fernandez
-  * Carlos Roca
 
 * `ID42 Sistemas <https://www.id42.com.br>`_:
 
